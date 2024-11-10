@@ -9,12 +9,10 @@ public class App {
         ServiceFormatageDate serviceFormattageDate = new ServiceFormatageDate();
         System.out.println("------------Affichage Date -----------");
         Date dateAFormatter = new Date();
-        String format1 = "yyyy-MM-dd";
-        String format2 = "dd-MM-yyyy";
         System.out.println("Formattage yyyy-MM-dd");
-        System.out.println(serviceFormattageDate.formatageDate(dateAFormatter, format1));
+        System.out.println(serviceFormattageDate.formaterDateAAAAMMJJ(dateAFormatter));
         System.out.println("Formattage dd-MM-yyyy");
-        System.out.println(serviceFormattageDate.formatageDate(dateAFormatter, format2));
+        System.out.println(serviceFormattageDate.formaterDateJJMMAAAA(dateAFormatter));
 
         System.out.println("-------Formattage nombre entier---------");
         ServiceFormattageNombreEntier serviceFormattageNombreEntier = new ServiceFormattageNombreEntier();
